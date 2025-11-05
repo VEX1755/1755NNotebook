@@ -1,0 +1,138 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: rgb(245, 247, 255);
+
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body header {
+    width: 100%;
+    background: white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.432);
+
+    padding: 1em;
+}
+
+header > p {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 1.4em;
+}
+
+#entriesDiv > article {
+    background: white;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.432);
+    margin: 2em;
+    padding: 1em;
+    border-radius: 10px;
+}
+
+article h2 {
+    font-size: 1.25em;
+    margin: 0;
+    margin-bottom: 0.3em;
+}
+
+article span {
+    margin-top: 1em;
+    color: rgba(0, 0, 0, 0.514);
+    font-style: oblique;
+}
+
+article div {
+    margin-left: 1em;
+    font-size: 0.8em;
+    border-radius: 20px;
+    display: inline;
+    padding: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    font-weight:600;
+}
+
+article div[data-cat="gameplan"] {
+    background: rgb(201, 201, 255);
+    color: rgb(25, 25, 238);
+}
+
+article div[data-cat="meeting"] {
+    background: rgb(255, 238, 201);
+    color: rgb(238, 170, 25);
+}
+
+article div[data-cat="testing"] {
+    background: rgb(224, 201, 255);
+    color: rgb(135, 25, 238);
+}
+
+article div[data-cat="design"] {
+    background: rgb(201, 240, 255);
+    color: rgb(25, 170, 238);
+}
+
+article div[data-cat="code"] {
+    background: rgb(203, 255, 201);
+    color: rgb(17, 212, 43);
+}
+
+article div[data-cat="building"] {
+    background: rgb(255, 201, 237);
+    color: rgb(238, 25, 210);
+}
+
+main {
+    margin: auto;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: row;
+    max-width: 1300px;
+}
+
+aside {
+    background: white;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.432);
+    margin: 2em;
+    padding: 1em;
+    border-radius: 10px;
+
+    min-width: 13em;
+}
+
+aside h2 {
+    font-size: 1.2em;
+}
+
+aside span {
+    margin-top: 1em;
+    margin-bottom: 0.8em;
+}
+
+aside input {
+    margin: 0.4em;
+}
+
+@media screen and (max-width: 768px) {
+    
+main {
+    align-items: stretch;
+    display: flex;
+    flex-direction: column;
+}
+}
+
+article[matching="false"] {
+    display: none;
+}
+
+article section {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+article section img {
+    object-fit: contain;
+    width: 100%;
+}
