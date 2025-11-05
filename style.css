@@ -50,6 +50,7 @@ article div {
     padding-left: 6px;
     padding-right: 6px;
     font-weight:600;
+    white-space: nowrap;
 }
 
 article div[data-cat="gameplan"] {
